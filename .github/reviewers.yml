@@ -1,0 +1,5 @@
+reviewers:
+  # The default reviewers
+  defaults:
+    - DOH-SRE1303 # user
+    - DOH-EEN0303 # user
