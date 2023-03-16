@@ -3,7 +3,10 @@ name: Auto Request Review
 on:
   pull_request:
     types: [opened, ready_for_review, reopened]
-
+    
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+permissions:
+  pull-requests: write
 jobs:
   # This workflow contains a single job called "build"
   build:
