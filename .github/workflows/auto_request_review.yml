@@ -22,10 +22,14 @@ jobs:
       - name: Print the GitHub Workspace environment variable
         run: ls 
         
+    
+        
   auto-request-review:
     name: Auto Request Review
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Request review based on files changes and/or groups the author belongs to
         uses: necojackarc/auto-request-review@v0.10.0
         with:
